@@ -9,6 +9,11 @@ as well as a *good* (completely ~~objective~~ statement...) starting point to my
 > *Gosh, i'm already so full.. writing this bullshit*
 
 ---
+## display
+
+![image](/public/disp.png)
+
+---
 
 #### WeylandWorks
 #### *nSpace projects pool*
