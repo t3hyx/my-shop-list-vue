@@ -1,12 +1,14 @@
 {
   "name": "my-shop-list-vue",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.15",
@@ -14,9 +16,12 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.10.2",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/tsconfig": "^0.7.0",
     "daisyui": "^5.0.9",
+    "eslint": "^9.22.0",
+    "eslint-plugin-format": "^1.0.1",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
     "vue-tsc": "^2.2.4"
