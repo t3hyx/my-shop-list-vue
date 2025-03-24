@@ -5,7 +5,7 @@ import { Icon } from '@iconify/vue'
 <template>
   <div class="hero bg-base-100">
     <div class="flex flex-col">
-      <div class="hero-content flex-col lg:flex-row-reverse mb-8">
+      <div class="hero-content flex-col lg:flex-row-reverse mb-8 mt-12">
         <!-- visuel/icon -->
         <div class="lg:w-1/2 flex justify-end">
           <Icon icon="emojione:shopping-cart" class="text-9xl max-w-sm" />
