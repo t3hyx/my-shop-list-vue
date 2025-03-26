@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import NewlistView from '../views/NewlistView.vue'
 </script>
 
 <template>
@@ -27,11 +26,11 @@ import NewlistView from '../views/NewlistView.vue'
       </div>
       <!-- boutons en dehors du hero -->
       <div class="flex justify-center w-full">
-        <button class="btn btn-primary mr-2">
-          <RouterLink :to="NewlistView">
+        <RouterLink :to="{ name: 'newlist' }">
+          <button class="btn btn-primary mr-2">
             Start Over
-          </RouterLink>
-        </button>
+          </button>
+        </RouterLink>
         <button class="btn btn-secondary">
           Resume Ongoing
         </button>

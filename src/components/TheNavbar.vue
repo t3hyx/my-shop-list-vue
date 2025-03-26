@@ -20,7 +20,11 @@ import HomeView from '../views/HomeView.vue'
       </div>
     </div>
     <div class="navbar-center">
-      <a class="btn btn-ghost text-xl">My Shoplist</a>
+      <RouterLink :to="{ name: 'home' }">
+        <button class="btn btn-ghost text-xl">
+          My Shoplist
+        </button>
+      </RouterLink>
     </div>
     <div class="navbar-end">
       <div class="justify-between">
