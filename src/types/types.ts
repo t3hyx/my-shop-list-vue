@@ -1,4 +1,4 @@
-export interface ShopItem {
+export interface IShopItem {
   id: string
   name: string
   category: string
@@ -8,16 +8,16 @@ export interface ShopItem {
   imageUrl?: string
 }
 
-export interface ShopItemList {
+export interface IShopItemList {
   id: string
   name: string
   createdAt: Date
-  items: ShopItem[]
+  items: IShopItem[]
 }
 
-export type FilterOption = 'all' | 'completed' | 'pending'
+export type TFilterOption = 'all' | 'completed' | 'pending'
 
-export enum ShopItemCategory {
+export enum EShopItemCategory {
   FRUITS = 'fruits',
   VEGETABLES = 'vegetables',
   DAIRY = 'dairy',
