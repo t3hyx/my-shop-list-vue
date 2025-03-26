@@ -3,7 +3,7 @@ export interface IShopItem {
   name: string
   category: string
   quantity: number
-  // unit?: string; //TODO : find a way to implement units
+  unit?: string
   isCompleted: boolean
   imageUrl?: string
 }

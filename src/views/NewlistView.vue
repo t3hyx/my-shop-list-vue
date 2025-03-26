@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { TFilterOption } from '../types/types'
-import InputShopItem from '../components/Input/InputShopItem.vue'
-import ShopItemList from '../components/ShopList/ShopItemList.vue'
-import { useShoppingList } from '../store/UseShopItemList'
+import InputShopItem from '../components/InputShopItem.vue'
+import ShopItemList from '../components/ShopItemList.vue'
+import { useShoppingList } from '../store/useShoppingList'
 
 // get store
 const { setFilter, filterOption, totalShopItems } = useShoppingList()
