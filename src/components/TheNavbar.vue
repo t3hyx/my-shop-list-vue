@@ -1,9 +1,9 @@
 <script setup lang="ts">
-
+import HomeView from '../views/HomeView.vue'
 </script>
 
 <template>
-  <div class="navbar bg-base-200 shadow-sm">
+  <div class="navbar bg-base-300 shadow-sm">
     <div class="navbar-start">
       <div class="dropdown">
         <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
@@ -13,7 +13,7 @@
           tabindex="0"
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
         >
-          <li><a>Homepage</a></li>
+          <li><RouterLink :to="HomeView" /></li>
           <li><a>Saved Shoplists</a></li>
           <li><a>Schedules</a></li>
         </ul>
