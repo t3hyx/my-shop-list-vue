@@ -56,7 +56,7 @@ const shopItemCategoryData = computed(() => {
       <Icon
         class="size-10"
         icon="gridicons:checkmark-circle"
-        :style="{ color: item.isCompleted ? 'green' : 'gray' }"
+        style="color: green"
       />
     </button>
   </li>
