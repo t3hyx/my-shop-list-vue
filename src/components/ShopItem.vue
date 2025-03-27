@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import type { IShopItem } from '../types/types'
-import { Icon } from '@iconify/vue/dist/iconify.js'
-import { defineEmits, defineProps } from 'vue'
+import { Icon } from '@iconify/vue'
+import { computed, defineEmits, defineProps } from 'vue'
+import { EShopItemCategory, RShopItemCategoryProps } from '../types/types'
 
 const props = defineProps<{
   item: IShopItem
@@ -22,17 +23,20 @@ function handleComplete() {
 }
 
 // TODO here also, you may want to define an handler for the 'edit' event
+
+const shopItemCategoryData = computed(() => {
+  return RShopItemCategoryProps[props.item.category] || RShopItemCategoryProps[EShopItemCategory.OTHER]
+})
 </script>
 
 <template>
   <li class="list-row bg-base-200">
-    <div>
-      <img
+    <div class="flex items-center justify-center size-10 rounded-full bg-base-300">
+      <Icon
+        :icon="shopItemCategoryData.icon"
         class="size-10"
-        :src="item.imageUrl || '../../assets/png/Goods Filled Icon.png'"
-        alt="Item Icon"
-        style="color: white"
-      >
+        :style="{ color: item.isCompleted ? 'gray' : shopItemCategoryData.color }"
+      />
     </div>
     <div>
       <div :class="{ 'line-through': item.isCompleted }">
