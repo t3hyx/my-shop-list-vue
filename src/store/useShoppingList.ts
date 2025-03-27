@@ -1,4 +1,4 @@
-import type { IShopItem, IShopItemList, TFilterOption } from '../types/types'
+import type { EShopItemCategory, IShopItem, IShopItemList, TFilterOption } from '../types/types'
 import { v4 as uuidv4 } from 'uuid'
 import { computed, ref } from 'vue'
 
@@ -29,13 +29,13 @@ export function useShoppingList() {
   const completedShopItems = computed(() => currentShopItemList.value.items.filter(item => item.isCompleted).length)
 
   // ? Methods
-  function addShopItem(name: string, category: string, quantity: number, imageUrl?: string): void {
+  function addShopItem(name: string, category: EShopItemCategory, quantity: number, unit: string): void {
     const newShopItem: IShopItem = {
       id: uuidv4(),
       name,
       category,
       quantity,
-      imageUrl,
+      unit,
       isCompleted: false,
     }
 
