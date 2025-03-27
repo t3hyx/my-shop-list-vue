@@ -19,9 +19,8 @@ export interface IShopItem {
   name: string
   category: EShopItemCategory
   quantity: number
-  unit?: string
+  unit: string
   isCompleted: boolean
-  imageUrl?: string
 }
 
 export interface IShopItemList {
