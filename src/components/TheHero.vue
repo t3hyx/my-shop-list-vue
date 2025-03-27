@@ -20,7 +20,7 @@ import { Icon } from '@iconify/vue'
           </h2>
           <p class="py-6">
             This app remembers your shopping lists so you don't have to pretend to,
-            because who <span class="text-primary font-bold underline">really</span> needs neurons when you have notifications?
+            because who <span class="text-primary font-bold underline">really</span> needs neurons, when you have notifications?
           </p>
         </div>
       </div>
