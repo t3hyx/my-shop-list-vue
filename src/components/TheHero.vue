@@ -15,10 +15,10 @@ import { Icon } from '@iconify/vue'
           <h1 class="text-5xl font-bold">
             Welcome back <span class="text-secondary">{user} </span>!
           </h1>
-          <h2 class="font-style: italic">
+          <h2 class="mt-4 font-style: italic">
             I'll remember what you forgot since... <span class="font-bold text-secondary">wait</span>, what were we talking about?
           </h2>
-          <p class="py-6">
+          <p class="mt-4 py-6">
             This app remembers your shopping lists so you don't have to pretend to,
             because who <span class="text-primary font-bold underline">really</span> needs neurons, when you have notifications?
           </p>
