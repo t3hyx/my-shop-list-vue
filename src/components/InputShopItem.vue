@@ -18,8 +18,10 @@ const unitOptions = [
   { value: 'g', label: 'grams' },
   { value: 'kg', label: 'kilograms' },
   { value: 'ml', label: 'milliliters' },
+  { value: 'cl', label: 'centiliters' },
   { value: 'l', label: 'liters' },
   { value: 'pcs', label: 'pieces' },
+  { value: 'pck', label: 'pack' },
 ]
 
 function handleSubmit() {
