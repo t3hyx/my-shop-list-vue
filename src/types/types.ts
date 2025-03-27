@@ -1,3 +1,19 @@
+export enum EShopItemCategory {
+  FRUITS = 'fruits',
+  VEGETABLES = 'vegetables',
+  DAIRY = 'dairy',
+  MEAT = 'meat',
+  CHEESE = 'cheese',
+  BAKERY = 'bakery',
+  BEVERAGES = 'beverages',
+  BEAUTY = 'beauty',
+  CLEANING = 'cleaning',
+  PHARMACY = 'pharmacy',
+  SWEETS = 'sweets',
+  ELECTRONICS = 'electronics',
+  OTHER = 'other',
+}
+
 export interface IShopItem {
   id: string
   name: string
@@ -16,22 +32,6 @@ export interface IShopItemList {
 }
 
 export type TFilterOption = 'all' | 'completed' | 'pending'
-
-export enum EShopItemCategory {
-  FRUITS = 'fruits',
-  VEGETABLES = 'vegetables',
-  DAIRY = 'dairy',
-  MEAT = 'meat',
-  CHEESE = 'cheese',
-  BAKERY = 'bakery',
-  BEVERAGES = 'beverages',
-  BEAUTY = 'beauty',
-  CLEANING = 'cleaning',
-  PHARMACY = 'pharmacy',
-  SWEETS = 'sweets',
-  ELECTRONICS = 'electronics',
-  OTHER = 'other',
-}
 
 export interface IShopItemCategoryProps {
   id: EShopItemCategory
