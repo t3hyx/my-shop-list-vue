@@ -70,7 +70,7 @@ const shopItemCategoryData = computed(() => {
     </div>
     <!-- <button class="btn btn-square btn-ghost">
       <Icon icon="mdi:file-edit" />
-    </button> --> <!-- TODO: Think on how you can display edit on ShopItem -->
+    </button> --> <!-- TODO: Think on how you can display edit ShopItem -->
     <button class="btn btn-square btn-ghost" @click="handleRemove()">
       <Icon class="size-10 fill-error" icon="gridicons:cross-circle" style="color:red" />
     </button>
